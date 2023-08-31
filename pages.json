@@ -8,7 +8,7 @@
 			}
 		},
 		{
-			"path": "pages/index/index",
+			"path": "pages/index/index-setup",
 			"style": {
 				"navigationBarTitleText": "我的",
 				"enablePullDownRefresh": true
