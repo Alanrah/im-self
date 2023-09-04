@@ -1,16 +1,19 @@
 {
-  "description": "项目配置文件。",
+  "appid": "wx106fc78a427e3f52",
+  "compileType": "miniprogram",
+  "libVersion": "3.0.1",
   "packOptions": {
     "ignore": [],
     "include": []
   },
   "setting": {
-    "urlCheck": false,
+    "coverView": true,
     "es6": true,
-    "postcss": false,
+    "postcss": true,
     "minified": true,
-    "newFeature": true,
-    "bigPackageSizeSupport": true,
+    "enhance": true,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmRelationList": [],
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -18,10 +21,6 @@
     },
     "condition": false
   },
-  "compileType": "miniprogram",
-  "libVersion": "3.0.1",
-  "appid": "wx106fc78a427e3f52",
-  "projectname": "im-self",
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",

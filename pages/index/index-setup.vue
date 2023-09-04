@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
+		<image class="logo" src="http://47.98.128.255:3001/png/logo.png"></image>
 		<view class="text-area">
 			<text class="title">{{ title1 }}</text>
 			 <div>Current Count: {{ counter.count }}</div>
