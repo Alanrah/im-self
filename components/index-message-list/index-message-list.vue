@@ -9,8 +9,8 @@
 						<image :src="newFriends.avatar"></image>
 					</view>
 					<view class="right">
-						<text class="name text-overflow ">{{ newFriends.name }}</text>
-						<text class="desc text-overflow">{{ newFriends.news }}</text>
+						<text class="name">{{ newFriends.name }}</text>
+						<text class="desc">{{ newFriends.news }}</text>
 					</view>
 				</view>
 				<!-- 消息列表 -->
@@ -20,9 +20,9 @@
 						<image :src="message.avatar"></image>
 					</view>
 					<view class="right">
-						<text class="name text-overflow ">{{ message.name }}</text>
-						<text class="desc text-overflow">{{ message.news }}</text>
-						<text class="time">{{ message.time }}</text>
+						<text class="name">{{ message.name }}</text>
+						<text class="desc">{{ message.news }}</text>
+						<text class="time">{{ getTime(message.time) }}</text>
 					</view>
 				</view>
 			</view>
@@ -31,7 +31,9 @@
 </template>
 
 <script>
-import {getIndexMessages} from '../../common/js/index-messages.js'
+import {getIndexMessages} from '../../common/js/index-messages.js';
+import {getTimeState} from '../../common/utils/transform-time.js';
+
 export default {
 	name: 'index-message-list',
 	data() {
@@ -45,19 +47,24 @@ export default {
 			const res = getIndexMessages();
 			this.newFriends = res.newFriends;
 			this.messageList = res.messageList;
+		},
+		getTime: function (time){
+			return getTimeState(time)
 		}
 	},
-	onLoad() {
+	// 注意：组件生命周期和页面生命周期不一样
+	mounted() {
 		this.getMessages();
-	}
+	},
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .main {
 	width:100%;
-	margin-top: 100rpx;
-	padding: 0 $uni-spacing-row-base;
+	margin-top: 108rpx;
+	padding: var(--status-bar-height) $uni-spacing-row-base 0 $uni-spacing-row-base;
+	box-sizing: border-box;
 }
 .messages-list {
 	width: 100%;
@@ -73,18 +80,19 @@ export default {
 			margin-right:$uni-spacing-row-base;
 			position: relative;
 			height: 96rpx;
+			background: linear-gradient(217deg, rgba(2205,189,92,.8), rgba(255,0,0,0) 70.71%),linear-gradient(27deg, rgba(113,168,123,.8), rgba(0,255,0,0) 70.71%),linear-gradient(136deg, rgba(160,185,110,.8), rgba(0,0,255,0) 70.71%);
+			border-radius: 10rpx;
 			image {
 				width: 96rpx;
 				height:96rpx;
 				border-radius: 10rpx;
-				// background-color: $uni-color-primary;
 			}
 			.unread{
 				background-color: $uni-color-warning;
 				border-radius: 18rpx;
 				position: absolute;
-				left:68rpx;
-				top:-10rpx;
+				right:-15rpx;
+				top:-12rpx;
 				z-index: 2;
 				font-size: $uni-font-size-sm;
 				color:$uni-text-color-inverse;
@@ -123,12 +131,13 @@ export default {
 				overflow: hidden;
 			}
 			.time{
-				width: 100rpx;
+				min-width: 140rpx;
 				font-size: $uni-font-size-sm;
 				position: absolute;
-				right: 40rpx;
+				right: 0rpx;
 				bottom:70rpx;
 				color: $uni-text-color-disable;
+				text-align: right;
 			}
 		}
 		
