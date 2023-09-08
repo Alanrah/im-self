@@ -51,7 +51,7 @@ export default {
 			width: 62rpx;
 			height: 62rpx;
 			border-radius: 16rpx;
-			margin: 15rpx;
+			margin: 15rpx 20rpx;
 		}
 	}
 
