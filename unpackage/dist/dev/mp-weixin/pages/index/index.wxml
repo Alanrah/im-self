@@ -1,1 +1,1 @@
-<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area" bindtap="{{b}}"><text class="title">{{a}}</text></view></view>
+<view class="index-content data-v-1cf27b2a"><index-topbar class="data-v-1cf27b2a" u-i="1cf27b2a-0" bind:__l="__l"></index-topbar><index-message-list class="data-v-1cf27b2a" u-i="1cf27b2a-1" bind:__l="__l"></index-message-list></view>

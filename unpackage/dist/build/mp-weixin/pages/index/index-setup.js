@@ -1,0 +1,2 @@
+"use strict";const e=require("../../common/vendor.js"),o=require("../../stores/counter.js"),n={__name:"index-setup",props:{id:String},setup(n){const t=o.useCounterStore();t.count++,t.$patch({count:t.count+1}),t.increment();const r=e.ref("Hello");return e.onReady((()=>{console.log("onReady")})),(o,n)=>({a:e.t(r.value),b:e.t(e.unref(t).count),c:e.o(((...e)=>o.onClick&&o.onClick(...e)))})}};wx.createPage(n);
+//# sourceMappingURL=index-setup.js.map

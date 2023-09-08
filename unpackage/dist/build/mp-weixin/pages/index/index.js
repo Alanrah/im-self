@@ -1,0 +1,2 @@
+"use strict";const e=require("../../common/vendor.js"),n={};if(!Array){(e.resolveComponent("index-topbar")+e.resolveComponent("index-message-list"))()}Math||((()=>"../../components/index-topbar/index-topbar.js")+(()=>"../../components/index-message-list/index-message-list.js"))();const s=e._export_sfc(n,[["render",function(e,n,s,o,t,r){return{}}],["__scopeId","data-v-943cf854"]]);wx.createPage(s);
+//# sourceMappingURL=index.js.map
