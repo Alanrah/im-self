@@ -10,12 +10,11 @@
 			</view>
 		</view>
 		<view class="main">
-			<view class="login-text">登录</view>
-			<view class="login-slogan">欢迎登录慢煮！</view>
+			<view class="login-text">注册</view>
+			<view class="login-slogan">欢迎注册慢煮！</view>
 			<input class="login-input" maxlength="10" placeholder="用户名/邮箱" />
 			<input class="login-input" password type="text" placeholder="密码" />
 			
-			<view class="tips">输入用户或密码错误！</view>
 			<button class="login-button" type="primary" @click="login" loading="true">登录</button>
 		</view>
 	</view>

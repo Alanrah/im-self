@@ -49,7 +49,7 @@
   width: 62rpx;
   height: 62rpx;
   border-radius: 16rpx;
-  margin: 15rpx;
+  margin: 15rpx 20rpx;
 }
 .top-bar .top-bar-center.data-v-5dc2e25d {
   position: absolute;

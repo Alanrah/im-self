@@ -19,85 +19,8 @@ function getIndexMessages() {
         avatar: "http://47.98.128.255:3001/png/logo.png",
         name: "开发的实力",
         news: "1cascsacas力",
-        unread: 100,
+        unread: 2,
         time: 1649088e6
-      },
-      {
-        avatar: "http://47.98.128.255:3001/png/logo.png",
-        name: "开发的实力",
-        news: "1cascsacas力",
-        unread: 100,
-        time: 1694142883347
-      },
-      {
-        avatar: "http://47.98.128.255:3001/png/logo.png",
-        name: "开发的实力",
-        news: "1cascsacas力",
-        unread: 100,
-        time: 1694142883347
-      },
-      {
-        avatar: "http://47.98.128.255:3001/png/logo.png",
-        name: "开发的实力",
-        news: "1cascsacas力",
-        unread: 100,
-        time: 1694142883347
-      },
-      {
-        avatar: "http://47.98.128.255:3001/png/logo.png",
-        name: "开发的实力",
-        news: "1cascsacas力",
-        unread: 100,
-        time: 1694142883347
-      },
-      {
-        avatar: "http://47.98.128.255:3001/png/logo.png",
-        name: "开发的实力",
-        news: "1cascsacas力",
-        unread: 100,
-        time: 1694142883347
-      },
-      {
-        avatar: "http://47.98.128.255:3001/png/logo.png",
-        name: "开发的实力",
-        news: "1cascsacas力",
-        unread: 100,
-        time: 1694142883347
-      },
-      {
-        avatar: "http://47.98.128.255:3001/png/logo.png",
-        name: "开发的实力",
-        news: "1cascsacas力",
-        unread: 100,
-        time: 1694142883347
-      },
-      {
-        avatar: "http://47.98.128.255:3001/png/logo.png",
-        name: "开发的实力",
-        news: "1cascsacas力",
-        unread: 100,
-        time: 1694142883347
-      },
-      {
-        avatar: "http://47.98.128.255:3001/png/logo.png",
-        name: "开发的实力",
-        news: "1cascsacas力",
-        unread: 100,
-        time: 1694142883347
-      },
-      {
-        avatar: "http://47.98.128.255:3001/png/logo.png",
-        name: "开发的实力",
-        news: "1cascsacas力",
-        unread: 100,
-        time: 1694142883347
-      },
-      {
-        avatar: "http://47.98.128.255:3001/png/logo.png",
-        name: "开发的实力",
-        news: "1cascsacas力",
-        unread: 100,
-        time: 1694142883347
       }
     ]
   };
